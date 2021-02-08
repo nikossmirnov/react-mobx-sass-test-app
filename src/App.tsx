@@ -11,7 +11,6 @@ function App() {
             <SideBar />
             <div className='page-content'>
                 <Header />
-
                 <MainPage />
             </div>
         </div>

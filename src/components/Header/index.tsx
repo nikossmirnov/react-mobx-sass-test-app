@@ -11,19 +11,19 @@ const Header = () => {
                     className='category'
                     onClick={() => CategoryState.categoryToPopular()}
                 >
-                    <a href='/'>Popular</a>
+                    <a>Popular</a>
                 </li>
                 <li
                     className='category'
                     onClick={() => CategoryState.categoryToFavorite()}
                 >
-                    <a href='/'>Favorite</a>
+                    <a>Favorite</a>
                 </li>
                 <li
                     className='category'
                     onClick={() => CategoryState.categoryToNew()}
                 >
-                    <a href='/'>New</a>
+                    <a>New</a>
                 </li>
             </ul>
         </div>

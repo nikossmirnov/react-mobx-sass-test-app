@@ -9,15 +9,12 @@ class State {
 
     categoryToPopular() {
         this.state = "Popular";
-        console.log(this.state);
     }
     categoryToFavorite() {
         this.state = "Favorite";
-        console.log(this.state);
     }
     categoryToNew() {
         this.state = "New";
-        console.log(this.state);
     }
 }
 
