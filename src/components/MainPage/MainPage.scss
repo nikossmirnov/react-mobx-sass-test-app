@@ -1,0 +1,103 @@
+@import "../../App.scss";
+
+.wrapper {
+    width: 90%;
+    overflow: auto;
+    position: fixed;
+    top: 200px; /*same as header height*/
+    bottom: 0;
+    overflow-y: scroll;
+    right: 0;
+
+    // ie and mozilla support
+    scrollbar-color: $thumbColor $secondaryColor;
+    scrollbar-face-color: $thumbColor;
+    scrollbar-shadow-color: $secondaryColor;
+    scrollbar-highlight-color: $secondaryColor;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+.img-container {
+    width: 90%;
+    position: relative;
+    margin: 5% 5%;
+}
+
+// bottom left icon
+
+.bottom-left {
+    position: absolute;
+    bottom: 8%;
+    left: 3%;
+    width: 8%;
+}
+
+// Top left text
+.top-left {
+    position: absolute;
+    top: 6%;
+    left: 3%;
+}
+
+//Top right text
+.top-right {
+    position: absolute;
+    top: 6%;
+    right: 6%;
+}
+
+//custom scrollbar
+.wrapper::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: $secondaryColor;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background: $thumbColor;
+}
+
+.text {
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 2.5vw;
+    color: white;
+    margin-bottom: 10%;
+}
+.paragraph {
+    color: white;
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 1023px) {
+    .Header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .wrapper {
+        overflow-y: hidden;
+        top: 150px;
+    }
+    .text {
+        font-family: $fontFamily;
+        font-weight: 500;
+        font-size: 5vw;
+        color: white;
+        margin-bottom: 1%;
+    }
+    .paragraph {
+        color: white;
+        font-family: $fontFamily;
+        font-weight: 500;
+        font-size: 3.5vw;
+    }
+}

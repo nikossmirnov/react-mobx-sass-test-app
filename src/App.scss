@@ -1,0 +1,23 @@
+$primaryColor: #ffe4d6;
+$secondaryColor: #f2cbbf;
+$hoverColor: #6749a5;
+$thumbColor: #c4c4c4;
+$linkColor: #cbb1a2;
+$fontFamily: Montserrat;
+
+.App {
+    display: flex;
+    background-color: #fff4ee;
+    height: 100vh;
+}
+.page-content {
+    width: 100%;
+    margin: 4% 7%;
+}
+
+@media (max-width: 1023px) {
+    .App {
+        display: flex;
+        height: 100vh;
+    }
+}
